@@ -1,0 +1,165 @@
+/* CSS stylesheet w/ media queries included at the bottom */
+
+/* Navigation styles for fixed side bar and profile image */
+
+.sidenav {
+  height: 100%;
+  width: 180px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1b1b1b;
+  overflow-x: hidden;
+  padding-top: 80px;
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #f7f7f7;
+  display: block;
+  text-align: center;
+}
+
+a:hover {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+.profile {
+  display: block;
+  width: 120px;
+  border-radius: 50%;
+  margin: 25px auto 25px auto;
+  border: 3px solid #80d9f7;
+}
+
+/* Background image styling with opacicty */
+
+.bgimg {
+  width: 100%;
+  margin-left: 100px;
+  margin-top: -50px;
+  opacity: 0.1;
+}
+
+/* Styles for Main page name and intro at the top of the page */
+
+.centered {
+  position: absolute;
+  top: 35%;
+  left: 480px;
+  transform: translate(-50%, -50%);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  color: #f1f1f1;
+}
+
+.largeblue {
+  font-family: "Raleway", sans-serif;
+  font-size: 80px;
+  color: #80d9f7;
+  font-weight: 900;
+}
+
+.sub {
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  color: #414141;
+}
+
+.sub2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  color: #414141;
+  text-align: left;
+  width: 500px;
+}
+
+/* Jumbotron styles over bootstrap and alignment for icons  */
+
+.jumbotron {
+  margin-left: 180px;
+  background-color: white;
+}
+
+.iconbox {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Bootstrap grid container styles to make room for sidbar */
+
+.container {
+  padding-left: 180px;
+  padding-top: 40px;
+  padding-right: 0;
+}
+
+/* Portfolio header text and font alignment stylings */
+
+.container2 {
+  text-align: center;
+  padding: 0 0 0 180px;
+}
+
+.subcenter {
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  color: #414141;
+  margin: 40 40 40 180;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+/* Smaller and darker text for the thumbnail captions in the portfolio gallery and a little vertical spacing*/
+
+.caption {
+  color: #1b1b1b;
+  font-size: small;
+}
+
+.row {
+  margin-top: 25px;
+}
+
+/* Footer / Contact styles */
+
+.footer {
+  width: 101%;
+  background-color: #414141;
+  text-align: center;
+  position: static;
+  color: white;
+  padding: 0 0 0 180px;
+}
+
+.contact {
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  color: #414141;
+  margin: 0 0 0 180;
+  text-align: center;
+}
+
+.flex {
+  margin-right: auto;
+  margin-left: auto;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Media queries start here */
+
+@media screen and (max-width: 980px) {
+  .portfolio {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidenav {
+    display: none;
+  }
+}
