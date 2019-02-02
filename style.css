@@ -45,14 +45,14 @@ a:hover {
 
 /* Styles for Main page name and intro at the top of the page */
 
-.centered {
+.topparent {
   position: absolute;
-  top: 35%;
-  left: 480px;
-  transform: translate(-50%, -50%);
+  top: 17%;
+  left: 260px;
+}
+
+.centered {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 30px;
-  color: #f1f1f1;
 }
 
 .largeblue {
@@ -86,6 +86,10 @@ a:hover {
 .iconbox {
   display: flex;
   justify-content: space-around;
+}
+
+.jumboicons {
+  font-size: 180px; color:#1b1b1b;
 }
 
 /* Bootstrap grid container styles to make room for sidbar */
@@ -150,16 +154,79 @@ a:hover {
   justify-content: space-between;
 }
 
+.mobilenav {
+
+  display: none;
+}
+
 /* Media queries start here */
 
 @media screen and (max-width: 980px) {
   .portfolio {
     width: 100%;
   }
+
+  
+  .largeblue {
+    font-size: 8vw;
+  }
+
+  .sub {
+    font-size: 4vw;
+  }
+
+  .sub2{
+    font-size: 1.6vmax;
+  }
+
+  .jumboicons {
+    font-size: 20vw;
+  }
 }
+
 
 @media screen and (max-width: 768px) {
   .sidenav {
     display: none;
+  }
+
+  .mobilenav {
+    display: initial;
+    }
+  
+  .navbar {
+    z-index: 1;
+  }
+
+  .navbar .container-fluid {
+    justify-content: center;
+  }
+
+  .bgimg {
+
+    height: 440px;
+    width: auto;
+    margin: 0;
+    background-position: center;
+    overflow: hidden;
+  }
+  .jumbotron {
+    margin-left: 0;
+  }
+   
+  .topparent {
+    left: 45px;
+  }
+
+  .container2 {
+    padding: 0;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .footer {
+    padding: 0;
   }
 }
