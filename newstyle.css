@@ -1,0 +1,207 @@
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.navbar {
+    background-color: #242424;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Training wheels 
+.hero-container {
+    border: solid red;
+    border-width: thin;
+}
+
+.card-layout {
+    border: dotted blue;
+}
+
+.cards-container {
+    border: dotted red;
+}
+
+.cards-wrapper {
+    border: dotted purple;
+
+}
+
+.cards-items {
+    border: solid blue;
+    border-width: thin;
+}
+
+.card {
+    border: none;
+}
+
+*/
+
+
+
+.hero-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+
+.hero-container-design {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+
+.hero-container-contact {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+
+.hero-container-design h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+}
+
+.hero-container h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+}
+
+.card-layout {
+    background: #fff;
+    align-items: center;
+}
+
+.card-layout h1 {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.cards-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cards-wrapper {
+    position: relative;
+    margin: 25px 0 0;
+
+}
+
+.cards-ul {
+    display: flex;
+    justify-content: center;
+
+    flex: 1;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 900px;
+}
+
+.card {
+    padding: .5rem;
+    background: #fff;
+}
+
+.card-img {
+    position: relative;
+    transition: all 0.2s linear;
+    overflow: hidden;
+    width: 100%;
+  }
+
+.card-img:hover {
+    transform: scale(1.02);
+}
+
+.card-text {
+    font-size: auto;
+    line-height: 24px;
+}
+
+
+.img-profile {
+    width: 300px;
+}
+
+.container {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footer-container{
+
+    padding: 4rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #242424;
+}
+
+
+/*
+.iconbox {
+    border: solid blue;
+}
+
+.social-icons {
+    border: solid black;
+}
+
+*/
+
+.iconbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto 0 auto;
+}
+
+.social-icons {
+    color: #fff;
+
+    margin: left;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 4rem;
+    display: flex;
+    align-self: center;
+    margin-bottom: 16px;
+}
+
+
+
+
+
+/* Media Querys */
+
+@media only screen and (min-width: 1024px) {
+    .cards__items {
+      display: flex;
+
+    }
+  }
+
