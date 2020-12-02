@@ -4,8 +4,32 @@ video {
     height: 100%;
     position: fixed;
     z-index: -1;
+    
 }
 
+/* This used to work for the parent element of button divs */
+/* But it does not work with newer browsers, the below doesn't hide the play button parent div */
+
+*::-webkit-media-controls-panel {
+    display: none!important;
+    -webkit-appearance: none;
+  }
+  
+  /* Old shadow dom for play button */
+  
+  *::-webkit-media-controls-play-button {
+    display: none!important;
+    -webkit-appearance: none;
+  }
+  
+  /* New shadow dom for play button */
+  
+  /* This one works! */
+  
+  *::-webkit-media-controls-start-playback-button {
+    display: none!important;
+    -webkit-appearance: none;
+  }
 .navbar {
     background-color: #242424;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
